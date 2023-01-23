@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game {
+    width: 600px;
+    height: 250px;
+    margin: auto;
+    background-image: url(images.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#Warrior {
+    width: 70px;
+    height: 70px;
+    background-image: url(oh-yay.gif);
+    background-size: 70px 70px;
+    position: relative;
+    top: 140px;
+}
+
+.jump{
+    animation: jump 0.2s linear;
+}
+
+@keyframes jump {
+0% {
+    top: 140px;
+}
+
+30% {
+    top: 110px;
+}
+
+50% {
+    top: 30px;
+}
+
+80% {
+    top: 110px;
+}
+
+100% {
+    top: 140px;
+}
+}
+
+#enemy {
+    width: 70px;
+    height: 70px;
+    background-image: url(squig-hopper-warhammer-fantasy.gif);
+    position: relative;
+    top: 70px;
+    left: 580px;
+    background-size: 70px 70px;
+    animation: block 2s infinite linear;
+}
+
+@keyframes block {
+0% {
+    left: 580px;
+}
+
+100% {
+    left: -20px;
+}
+}
